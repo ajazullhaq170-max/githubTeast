@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        button{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: white;
+            height: 100px;
+            width: 200px;
+            border-radius: 50px;
+            border: gray solid 5px;
+        }
+        div{
+            height: 90%;
+            width: 50%;
+            border-radius: 50px;
+            background-color: black;
+        }
+        
+        
+    .body{
+        background-color: black;
+       
+    }
+     .button{
+        justify-content: flex-end;
+        border: gray solid 5px;
+
+              
+        }
+    
+    </style>
+</head>
+<body id="div">
+    <button id="button">
+    <div>
+
+    </div>
+</button>
+<script>
+    let but = document.getElementById("button");
+    let div = document.getElementById("div");
+
+    but.onclick = function(){
+        if( div.className == "body"){
+            div.className = "";
+            but.className = "";
+        }else{
+            div.className = "body";
+            but.className = "button";
+        }
+    }
+   
+</script>
+</body>
+</html>
